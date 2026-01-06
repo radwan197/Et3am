@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مبادرة إطعام - جامعة قناة السويس</title>
+    <style>
+        body {
+            background-color: #004aad; /* الخلفية الزرقاء */
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        h2 { margin-bottom: 20px; border-bottom: 2px solid white; display: inline-block; padding-bottom: 10px;}
+        input, textarea {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            text-align: right;
+        }
+        button {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 90%;
+        }
+        button:hover { background-color: #e68900; }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            line-height: 1.6;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .quran {
+            font-family: 'Traditional Arabic', serif;
+            font-size: 20px;
+            color: #ffeb3b;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        .slogan {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>تسجيل تبرع وجبات</h2>
+        <p>أصحاب المطاعم والفنادق.. مساهمتكم تنقذ حياة.</p>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            
+            <input type="hidden" name="access_key" value="e90a6a5c-b8b7-49c3-9bc4-9c8992bf5797">
+            
+            <input type="hidden" name="from_name" value="مبادرة إطعام">
+            <input type="hidden" name="subject" value="تبرع جديد بالوجبات">
+
+            <input type="text" name="Restaurant_Name" placeholder="اسم المطعم / الفندق" required>
+            
+            <input type="tel" name="Phone_Number" placeholder="رقم الهاتف للتواصل" required>
+            
+            <input type="text" name="Meal_Type" placeholder="نوع الوجبات (مثال: وجبات غداء مطبوخة)" required>
+            
+            <input type="number" name="Quantity" placeholder="عدد الوجبات" required>
+            
+            <textarea name="Details" rows="4" placeholder="تفاصيل أخرى (وقت الاستلام، الموقع، أو ملاحظات هامة)"></textarea>
+
+            <button type="submit">إرسال بيانات التبرع</button>
+        </form>
+
+        <div class="footer">
+            <div class="slogan">معًا للقضاء على الجوع</div>
+            <p>هذا الموقع مبادرة تطوعية تهدف إلى الحد من الجوع وتقليل هدر الطعام، من خلال إتاحة الفرصة لأصحاب المطاعم والمؤسسات الغذائية للتبرع بالطعام الصالح، ليصل إلى الأسر والأفراد الأكثر احتياجًا.</p>
+            
+            <p>نؤمن بأن التكافل الاجتماعي مسؤولية مشتركة، وأن كل وجبة يتم التبرع بها قد تكون سببًا في إدخال السرور على قلب محتاج وإنقاذه من الجوع.</p>
+
+            <div class="quran">
+                قال الله تعالى:<br>
+                ﴿وَيُطْعِمُونَ الطَّعَامَ عَلَىٰ حُبِّهِ مِسْكِينًا وَيَتِيمًا وَأَسِيرًا﴾<br>
+                صدق الله العظيم.
+            </div>
+
+            <p>المبادرة تحت إشراف منظومة الجوالة – جامعة قناة السويس<br>
+            سعيًا لتحقيق الهدف الثاني من أهداف التنمية المستدامة: القضاء على الجوع.</p>
+
+            <hr style="border-color: rgba(255,255,255,0.3);">
+            <p>© جميع الحقوق محفوظة – عشيرة جوالة كليه السياحه و الفنادق</p>
+        </div>
+    </div>
+
+</body>
+</html>
